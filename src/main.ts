@@ -18,7 +18,7 @@ server.put("/api/products/:productId", updateProduct);
 
 server.delete("/api/products/:productId", deleteProduct);
 try{
-    await server.listen({ port: 3456 });
+    await server.listen({ port: 4000 });
 } catch (err){
     server.log.error(err);
 }
