@@ -16,8 +16,8 @@ type Product = z.infer<typeof productSchema>;
 
 const productArray: Product[] = [];
 
-productArray.push({id: "96a862a1-2470-4079-bb3a-3a062fbac6ad", name: "bananas", desrciption: "really tasty", price: 3.4, category: "fruit", inStock: false});
-productArray.push({id: "9388f4de-324e-48d5-becf-570a69b687df", name: "oranges", desrciption: "really tasty", price: 4.5, category: "fruit", inStock: true});
+// productArray.push({id: "96a862a1-2470-4079-bb3a-3a062fbac6ad", name: "bananas", desrciption: "really tasty", price: 3.4, category: "fruit", inStock: false});
+// productArray.push({id: "9388f4de-324e-48d5-becf-570a69b687df", name: "oranges", desrciption: "really tasty", price: 4.5, category: "fruit", inStock: true});
 
 export async function getProducts(request, response){
     response.code(200).send(productArray);
