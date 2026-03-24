@@ -5,7 +5,7 @@ import { createProduct, getProducts, updateProduct, getProductsById, deleteProdu
 const server = Fastify({logger: true});
 
 server.get('/', async function (request, reply) {
-  return "1234567890qwertyuiop[]asdfghjkl;'xcvbnm,./";
+  return "";
 });
 
 server.get('/api/products', getProducts);
