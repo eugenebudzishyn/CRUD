@@ -4,7 +4,7 @@ import {v4 as uuidv4, validate} from "uuid";
 const productSchema = z.object({
     id: z.uuidv4(),
     name: z.string(),
-    desrciption: z.string(),
+    description: z.string(),
     price: z.number().gte(0),
     category: z.string(),
     inStock: z.boolean()
